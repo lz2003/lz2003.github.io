@@ -1,0 +1,458 @@
+/* Dafault style for all text */
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x:hidden;
+    color:#29308a;
+}
+
+h2:after {
+    content:"";
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    padding-top: 20px;
+    border-bottom: 5px solid #4ab0ed;
+}
+
+/* Navigation */
+.navbar {
+    -webkit-transition: all 0.6ss ease;
+    transition: all 0.6s ease;
+    text-transform: uppercase;
+    background: rgba(0, 7, 80)!important;
+}
+
+.navbar.transparent {
+    background: rgba(0, 7, 80, 0)!important;
+}
+
+.navbar-dark .navbar-brand {
+    color:#81d9f5;
+    font-weight:600;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color:#81d9f5;
+    padding-right: 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-brand:hover {
+    color: #e891cf;
+}
+
+/* Home */
+/* Landing */
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -100;
+}
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    color:white;
+    z-index: 1;
+}
+
+.caption h1 {
+    font-weight: 700;
+    font-size: 3.8rem;
+    letter-spacing: .3rem;
+}
+
+.caption h1 {
+  border-right: solid 3px rgba(255,255,255,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  margin: 0 auto;
+}
+
+/* Animation */
+.caption h1 {
+  animation: animated-text 2s steps(20,end) 1s 1 normal both,
+             animated-cursor 600ms steps(20,end) infinite;
+}
+
+.me {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #555;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 410px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/* About */
+.heading {
+    margin: 5rem 0 4rem;
+    text-align: center;
+}
+
+.narrow p, .narrow span {
+    padding-top:1rem;
+    font-size: 1.2rem;
+}
+
+/*
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: top;
+}
+.interests span {
+    opacity:0;
+	overflow: hidden;
+	position: absolute;
+    right:0;
+    left:0;
+    top:300px;
+}
+
+.pics {
+    width:45%;
+}
+
+.pics img {
+    top: 20%;
+    width: 50%;
+    opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}*/
+
+.narrow .btn {
+    margin-top:1rem;
+    background-color: #29308a;
+    color:white;
+}
+
+.narrow .btn:hover {
+    background-color: #202574;
+}
+  
+.narrow {
+    margin:auto;
+}
+
+.jumbotron {
+    margin-bottom:0;
+    padding-top:20px;
+    min-height: 750px;
+}
+
+.bar .skill {
+    padding: 30px 0 10px;
+}
+
+/* Skills */
+
+.bar .skill.top{
+    padding-top: 10px;
+}
+
+.bar .progress{
+    margin:auto;
+    width: 70%;
+    background: #fff;
+    position: relative;
+    border-radius: 10px;
+}
+
+.bar .progress-animation span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: barAnimate 1s 0.2s forwards;
+}
+
+.bar .progress-animation.python span{
+    background: #4ab0ed;
+    width: 90%;
+}
+.bar .progress-animation.java span{
+    background: #4ab0ed;
+    width: 60%;
+}
+.bar .progress-animation.htmlcss span{
+    background: #4ab0ed;
+    width: 80%;
+}
+.bar .progress-animation.jscript span{
+    background: #4ab0ed;
+    width: 65%;
+}
+
+@keyframes barAnimate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+
+/* Socials */
+
+.socials {
+    margin-top:1rem;
+}
+
+.social-icon {
+    height: 100px;
+}
+
+.fa {
+    padding-right: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+}
+
+.fa-facebook, .fa-github, .fa-linkedin{
+    padding:10px 13px;
+    border-radius: 25%;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .7s;
+    color: #29308a;
+}
+
+.fa-linkedin:hover {
+    background-color: #0e76a8;
+    color: white;
+}
+
+.fa-github:hover {
+    background-color: #211F1F;
+    color: white;
+}
+
+.fa-facebook:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+/* Portfolio */
+
+#portfolio{
+    min-height: 750px;
+}
+
+/* Projects */
+#projects {
+    background-color: white;
+    color:#29308a;
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+}
+
+.custom-wrapper {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    grid-template-columns: auto auto;
+    align-items:center;
+    column-gap: 10rem;
+    row-gap: 4rem;
+    padding: 4rem;
+}
+
+.custom-cards {
+    background-color: #eee;
+    height: 15em;
+    width: 16em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.custom-cards h3 {
+    padding-top: 1.5em;
+    font-size: 25px;
+}
+
+.custom-cards p {
+    font-size: 14px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* Hover animation */
+.custom-cards {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+
+  .custom-cards:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #4ab0ed;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.custom-cards:hover h3, .custom-cards:focus h3, .custom-cards:active h3{
+    color: white;
+}
+
+.custom-cards:hover:before, .custom-cards:focus:before, .custom-cards:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+/* Text fade animation */
+.fader img {
+   cursor: default; 
+   opacity: 1;
+}
+
+.fader {
+    transition: 0.35s;
+}
+
+.custom-cards:hover .fader {
+    opacity:0;
+}
+
+.appear {
+    cursor: default; 
+    opacity: 0;
+    transition: 0.35s;
+    position:absolute;
+    top: 45%;
+}
+
+.appear a {
+    color:white;
+}
+
+.custom-cards:hover .appear {
+    opacity:1;
+}
+
+/* Contact*/
+#contact .container-fluid {
+    background-color:#29308a;
+    color:white;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    min-height: 750px;
+}
+
+textarea {
+    height: 250px;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-section {
+    margin-bottom: 1.5rem;
+    color: #e9ecef;
+}
+
+.form-control {
+    width: 45%;
+    margin: auto;
+}
+
+.form-control:focus {
+    background-color: #ebebeb;
+    transition:cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.1s;
+}
+
+input[type=text] {
+    border:none;
+}
+
+.form-control textarea {
+    height: 500px;
+}
+
+.contact-form .btn {
+    background-color: #4ab0ed;
+    border: none;
+}
+
+.contact-form .btn:hover {
+    background-color: #358fc4;
+}
+
+/* Footer */
+.page-footer {
+    background-color:#00076F;
+}
+.page-footer .footer-copyright,
+.page-footer a {
+    text-align: center;
+    color:white;
+    padding: 50px, 0px, 50px, 0px;
+}
+
+/* Large screen css */
+@media(min-width:1300px) {
+    
+    .custom-wrapper {
+        column-gap: 5rem;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+/* Mobile css */
+@media(max-width:800px) {
+    
+    .custom-wrapper {
+        grid-template-columns: auto;
+    }
+}
