@@ -83,7 +83,7 @@ h2:after {
 
 /* Animation */
 .caption h1 {
-  animation: animated-text 2s steps(20,end) 1s 1 normal both,
+  animation: animated-text 2s steps(20,end) 0.5s 1 normal both,
              animated-cursor 600ms steps(20,end) infinite;
 }
 
@@ -91,7 +91,7 @@ h2:after {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background-color: #555;
+    background-image: url("../img/profile2.png");
     margin: 0 auto;
     margin-top: 1em;
 }
@@ -99,7 +99,7 @@ h2:after {
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 410px;}
+  to{width: 430px;}
 }
 
 /* cursor animations */
